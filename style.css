@@ -18,8 +18,25 @@ html, body {
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3em;
-    text-align: center;
+    border-right: 2px solid rgba(0, 0, 0, 0.75);
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    width: 690px;
+    margin: 1em auto;
 }
+.anim-typewriter{
+    animation: typewriter 3s steps(60) 1s 1 normal both,
+               blinkTextCursor 600ms steps(60) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 690px;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(0, 0, 0, 0.75);}
+    to{border-right-color: transparent;}
+  }
 p {
     font-family: 'Chakra Petch', sans-serif;
     text-align: center;
@@ -120,8 +137,13 @@ h4 {
         font-size: 0.7em;
     }
     h1 {
-        font-size: 2em;
+        font-size: 1.5em;
+        width: 35px;
     }
+    @keyframes typewriter{
+        from{width: 0;}
+        to{width: 350px;}
+      }
     h2 {
         font-size: 1em;
     }
