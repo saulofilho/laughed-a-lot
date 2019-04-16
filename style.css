@@ -120,17 +120,20 @@ button {
     padding: 0 18vw 0 18vw;
 }
 .content {
-    padding-top: 2em;
     display: none;
 }
 footer {
-    padding: 4em 0 2em 0;
+    padding-top: 10vh;
 }
 h4 {
     text-align: center;
     font-family: Helvetica, sans-serif;
-    font-size: 10px;
+    font-size: 8px;
     color: rgb(155, 155, 155);
+}
+h4 a {
+    text-decoration: none;
+    color: gray;
 }
 @media screen and (max-width: 800px) {
     p {
