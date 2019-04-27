@@ -60,19 +60,19 @@ h2 {
     margin-bottom: 1em;
 }
 #box1 {
-    border-color: greenyellow;
+    border-color: orangered;
 }
 #box2 {
-    border-color: pink;
-}
-#box3 {
     border-color: orange;
 }
+#box3 {
+    border-color: yellow;
+}
 #box4 {
-    border-color: lightskyblue;
+    border-color: greenyellow;
 }
 #box5 {
-    border-color: lightcoral;
+    border-color: lightskyblue;
 }
 #box6 {
     border-color: purple;
