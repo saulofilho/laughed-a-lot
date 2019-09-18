@@ -1,3 +1,5 @@
+'use strict';
+
 $(document).ready(function () {
     $('#mais1').on('click', function () {
         $('<span>rsrs</span>').appendTo('#box1');
@@ -40,9 +42,6 @@ $(document).ready(function () {
     $('#menos6').on('click', function () {
         $('#box6').find('span').last().remove();
     });
-    $('.js-tilt').tilt({
-        scale: 1.5,
-    })
 });
 
 function copyClip (containerid) {

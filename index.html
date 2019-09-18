@@ -2,118 +2,132 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Exaggereted Laugh Generator. Não é uma ideia nova. Fiz esse site para estudar jQuery e para você gerar (pra caralho!) sua
-    risada favorita e colar nas suas redes sociais. LOOOOL!!!">
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <link rel="shortcut icon" href="emo.png" type="image/png">
+    <meta name="description" content="When you need to laugh a lot, and you have a lot of laziness though.">
+    <link href="./style/style.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="./img/emo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Manjari:700&display=swap" rel="stylesheet">
     <title>Exaggereted Laugh Generator</title>
+    <script src="https://kit.fontawesome.com/53f27d6075.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="textPrincipal">
-        <h1 class="anim-typewriter">Exaggereted Laugh Generator</h1>
-        <p>When you need to laugh a lot, and you have a lot of laziness though. Is this. Made with jQuery and a lit bit of js.</p>
-    </div>
-
-        <div id="container">
-
-                <div class="content">
-                    <h2>rsrs <span class="gray">RSRS</span></h2>
-                    <div class="rs">
-                        <button type="button" id="mais1">+</button>
-                        <button type="button" id="menos1">-</button>
-                        <button type="button" onclick="up1('box1')" id="up">up</button>
-                        <button type="button" onclick="low1('box1')" id="low">low</button>
-                        <br>
-                        <br>
-                        <div class="box" id="box1"><span class="padSpan"></span></div>
-                        <br>
-                        <button type="button" onclick="copyClip('box1')" id="copy1">C0PY</button>
+    <div class="wrapper">
+        <div class="left-text">
+            <h1>Exaggereted Laugh Generator</h1>
+            <p class="text-about">When you need to laugh a lot, and you have a lot of laziness though. Is this. Made with jQuery and a lit bit of js.</p>
+        </div>
+        <div class="right-content">
+            <div class="content">
+                <div class="row">
+                    <div class="col-1">
+                        <h2>rsrs</h2>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" id="mais1"><i class="fas fa-plus"></i></button>
+                        <button type="button" id="menos1"><i class="fas fa-minus"></i></button>
+                        <button type="button" onclick="up1('box1')" id="up"><i class="fas fa-arrow-up"></i></button>
+                        <button type="button" onclick="low1('box1')" id="low"><i class="fas fa-arrow-down"></i></button>
+                        <button type="button" onclick="copyClip('box1')" id="copy1"><i class="fas fa-copy"></i></button>
                     </div>
                 </div>
-        
-                <div class="content">
-                    <h2>haha <span class="gray">HAHA</span></h2>
-                    <button type="button" id="mais2" class="generator">+</button>
-                    <button type="button" id="menos2" class="generator">-</button>
-                    <button type="button" onclick="up2('box2')" id="up">up</button>
-                    <button type="button" onclick="low2('box2')" id="low">low</button>
-                    <br>
-                    <br>
-                    <div class="box" id="box2"><span class="padSpan"></span></div>
-                    <br>
-                    <button type="button" onclick="copyClip('box2')" id="copy2" class="generator">C0PY</button>
+                <div class="box bg-pink" id="box1">
+                    <span class="padSpan"></span>
                 </div>
-        
-                <div class="content">
-                    <h2>hehe <span class="gray">HEHE</span></h2>
-                    <button type="button" id="mais3" class="generator">+</button>
-                    <button type="button" id="menos3" class="generator">-</button>
-                    <button type="button" onclick="up3('box3')" id="up">up</button>
-                    <button type="button" onclick="low3('box3')" id="low">low</button>
-                    <br>
-                    <br>
-                    <div class="box" id="box3"><span class="padSpan"></span></div>
-                    <br>
-                    <button type="button" onclick="copyClip('box3')" id="copy3" class="generator">C0PY</button>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col-1">
+                        <h2>haha</h2>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" id="mais2"><i class="fas fa-plus"></i></button>
+                        <button type="button" id="menos2"><i class="fas fa-minus"></i></button>
+                        <button type="button" onclick="up2('box2')" id="up"><i class="fas fa-arrow-up"></i></button>
+                        <button type="button" onclick="low2('box2')" id="low"><i class="fas fa-arrow-down"></i></button>
+                        <button type="button" onclick="copyClip('box2')" id="copy2"><i class="fas fa-copy"></i></button>
+                    </div>
                 </div>
-        
-                <div class="content">
-                    <h2>hihi <span class="gray">HIHI</span></h2>
-                    <button type="button" id="mais4" class="generator">+</button>
-                    <button type="button" id="menos4" class="generator">-</button>
-                    <button type="button" onclick="up4('box4')" id="up">up</button>
-                    <button type="button" onclick="low4('box4')" id="low">low</button>
-                    <br>
-                    <br>
-                    <div class="box" id="box4"><span class="padSpan"></span></div>
-                    <br>
-                    <button type="button" onclick="copyClip('box4')" id="copy4" class="generator">C0PY</button>
+                <div class="box bg-green" id="box2">
+                    <span class="padSpan"></span>
                 </div>
-        
-                <div class="content">
-                    <h2>kkkkk <span class="gray">KKKKK</span></h2>
-                    <button type="button" id="mais5" class="generator">+</button>
-                    <button type="button" id="menos5" class="generator">-</button>
-                    <button type="button" onclick="up5('box5')" id="up">up</button>
-                    <button type="button" onclick="low5('box5')" id="low">low</button>
-                    <br>
-                    <br>
-                    <div class="box" id="box5"><span class="padSpan"></span></div>
-                    <br>
-                    <button type="button" onclick="copyClip('box5')" id="copy5" class="generator">C0PY</button>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col-1">
+                        <h2>hehe</h2>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" id="mais3"><i class="fas fa-plus"></i></button>
+                        <button type="button" id="menos3"><i class="fas fa-minus"></i></button>
+                        <button type="button" onclick="up3('box3')" id="up"><i class="fas fa-arrow-up"></i></button>
+                        <button type="button" onclick="low3('box3')" id="low"><i class="fas fa-arrow-down"></i></button>
+                        <button type="button" onclick="copyClip('box3')" id="copy3"><i class="fas fa-copy"></i></button>
+                    </div>
                 </div>
-        
-                <div class="content">
-                    <h2>jaja <span class="gray">JAJA</span></h2>
-                    <button type="button" id="mais6" class="generator">+</button>
-                    <button type="button" id="menos6" class="generator">-</button>
-                    <button type="button" onclick="up6('box6')" id="up">up</button>
-                    <button type="button" onclick="low6('box6')" id="low">low</button>
-                    <br>
-                    <br>
-                    <div class="box" id="box6"><span class="padSpan"></span></div>
-                    <br>
-                    <button type="button" onclick="copyClip('box6')" id="copy6" class="generator">C0PY</button>
+                <div class="box bg-orange" id="box3">
+                    <span class="padSpan"></span>
                 </div>
-
-        </div>
-        
-        <button id="leftB" onclick="plusDivs(-1)">&#10094;</button>
-        <button id="rightB" onclick="plusDivs(1)">&#10095;</button>
-            
-    <footer>
-        <h4>
-            <a href="https://www.saulofilho.com/" target="_blank">saulofilho.com</a>
-            <br>
-            &copy;2017-2018 Proudly Made in 🇧🇷
-        </h4>
-    </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="script.js"></script>
-    <script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
-    
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col-1">
+                        <h2>hihi</h2>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" id="mais4"><i class="fas fa-plus"></i></button>
+                        <button type="button" id="menos4"><i class="fas fa-minus"></i></button>
+                        <button type="button" onclick="up4('box4')" id="up"><i class="fas fa-arrow-up"></i></button>
+                        <button type="button" onclick="low4('box4')" id="low"><i class="fas fa-arrow-down"></i></button>
+                        <button type="button" onclick="copyClip('box4')" id="copy4"><i class="fas fa-copy"></i></button>
+                    </div>
+                </div>
+                <div class="box bg-blue" id="box4">
+                    <span class="padSpan"></span>
+                </div>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col-1">
+                        <h2>kkkkk</h2>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" id="mais5"><i class="fas fa-plus"></i></button>
+                        <button type="button" id="menos5"><i class="fas fa-minus"></i></button>
+                        <button type="button" onclick="up5('box5')" id="up"><i class="fas fa-arrow-up"></i></button>
+                        <button type="button" onclick="low5('box5')" id="low"><i class="fas fa-arrow-down"></i></button>
+                        <button type="button" onclick="copyClip('box5')" id="copy5"><i class="fas fa-copy"></i></button>
+                    </div>
+                </div>
+                <div class="box bg-yellow" id="box5">
+                    <span class="padSpan"></span>
+                </div>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col-1">
+                        <h2>jaja</h2>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" id="mais6"><i class="fas fa-plus"></i></button>
+                        <button type="button" id="menos6"><i class="fas fa-minus"></i></button>
+                        <button type="button" onclick="up6('box6')" id="up"><i class="fas fa-arrow-up"></i></button>
+                        <button type="button" onclick="low6('box6')" id="low"><i class="fas fa-arrow-down"></i></button>
+                        <button type="button" onclick="copyClip('box6')" id="copy6"><i class="fas fa-copy"></i></button>
+                    </div>
+                </div>
+                <div class="box bg-purple" id="box6">
+                    <span class="padSpan"></span>
+                </div>
+            </div>
+            <div class="row button-footer">
+                <button id="leftB" onclick="plusDivs(-1)"><i class="fas fa-arrow-left"></i></button>
+                <button id="rightB" onclick="plusDivs(1)"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>  
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="./script/script.js"></script>
 </body>
 </html>
