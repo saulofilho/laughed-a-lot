@@ -1,0 +1,112 @@
+$layout-breakpoint-column: 1100px
+$bg-color-pink: rgb(250, 184, 250)
+$bg-color-green: #12ff6a
+$bg-color-orange: rgb(247, 174, 132)
+$bg-color-blue: rgb(106, 158, 255)
+$bg-color-yellow: rgb(255, 232, 131)
+$bg-color-purple: rgb(206, 133, 255)
+
+* 
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+html, body 
+    margin: 0
+    width: 100%
+    scroll-behavior: smooth
+
+.wrapper
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))
+    grid-gap: 30px
+    margin: 1rem
+
+h1
+    font-family: 'Rubik', sans-serif
+    font-weight: 900
+    font-style: normal
+    text-transform: uppercase
+    font-size: 7rem
+    line-height: 5.5rem
+    word-wrap: break-word
+
+.text-about
+    font-family: 'Manjari', sans-serif
+    font-weight: 700
+    font-style: normal
+    font-size: 2.5rem
+    word-wrap: break-word
+
+.right-content
+    border: 4px solid black
+    box-shadow: -10px 10px 0 0 rgba(black, .2)
+
+.row
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-gap: 30px
+    margin: 1rem
+
+.col-2
+    display: flex
+    justify-content: flex-end
+
+h2
+    font-family: 'Manjari', sans-serif
+    font-style: normal
+    font-size: 2rem
+    
+.box
+    height: 500px
+    word-break: break-all
+    overflow: auto
+    padding: 1rem
+
+.box span
+    font-family: 'Manjari', sans-serif
+    font-style: normal
+    font-size: 3rem
+
+button
+    background-color: white
+    border: none
+    color: black
+    cursor: pointer
+
+button:focus
+    outline: 0
+
+i
+    font-size: 1rem
+
+.button-footer
+    padding: 10px
+
+.bg-pink
+    background-color: $bg-color-pink
+    
+.bg-green
+    background-color: $bg-color-green
+
+.bg-orange
+    background-color: $bg-color-orange
+
+.bg-blue
+    background-color: $bg-color-blue
+
+.bg-yellow
+    background-color: $bg-color-yellow
+
+.bg-purple
+    background-color: $bg-color-purple
+
+@media screen and ( max-width: $layout-breakpoint-column ) 
+    h1
+        font-size: 4em
+        line-height: 3rem
+        word-wrap: break-word
+
+    .text-about
+        font-size: 2rem
+        word-wrap: break-word

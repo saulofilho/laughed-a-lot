@@ -1,0 +1,35 @@
+{
+  "name": "exaggeretedlaughgenerator",
+  "version": "1.0.0",
+  "description": "code of project",
+  "main": "./script/script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp",
+    "start": "node server.js",
+    "sass-minify": "gulp sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saulofilho/ExaggeretedLaughGenerator.git"
+  },
+  "keywords": [
+    "lol"
+  ],
+  "author": "Saulo Filho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saulofilho/ExaggeretedLaughGenerator/issues"
+  },
+  "homepage": "https://github.com/saulofilho/ExaggeretedLaughGenerator#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-http-to-https": "^1.1.4",
+    "node-fetch": "^2.3.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.12.0"
+  }
+}
