@@ -16,3 +16,5 @@ gulp.task('sass', function () {
 gulp.task('default', function () {
   gulp.start('sass');
 });
+
+// sass --watch style/style.sass style/style.css
